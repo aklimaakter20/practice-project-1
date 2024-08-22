@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+ /* Common css start*/
+ 
+  .container{
+    max-width: 1240px;
+    margin: 0% auto;
+ }
+ .between{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    align-items: center;
+ } 
+  /* Common css end*/
+  /* navbar start */
+.navbar{
+    max-width: 93%;
+    margin: 0% auto;
+    display: flex;
+    gap: 60px;
+    padding: 20px 40px;
+    color: #0b0736;
+
+    & h3{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    & div{
+        border: 1px solid gainsboro;
+        padding: 8px;
+        display: flex;
+        gap: 8px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+}
+.banner-image{
+    position: absolute;
+    width: 50dvw;
+    right: 0;
+    top: 0;
+    z-index: -155;
+}
+.banner-section{
+    padding: 120px 0;
+    margin-left: 150px;
+
+    & h1{
+        font-size: 90px;
+        font-weight: 600;
+        color: #0b0736;
+    }
+    & div{
+        padding: 20px 0;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        justify-items: center;
+        font-size: 26px;
+    }
+}
+ 
+.btn{
+    color: #fff;
+    background-color: #0b0736;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+}
+.target-section{
+   padding: 140px 0;
+   display: grid;
+   gap: 5rem;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+
+     .target-img{
+        width: 80%;
+        
+    }
+
+    & h2{
+        font-size: 68px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+     .details{
+        padding: 30px 0;
+        color: grey;
+        font-size: 20px;
+         
+    }
+     .store-design{
+        display: flex;
+        gap: 16px;
+        padding: 16px 28px;
+        border-radius: 20px;
+        background-color: #cce8fd;
+        width: fit-content;
+       
+    }
+    & p{
+        font-size: 12px;
+        color: #9393c4;
+    }
+    & h3{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .fa-apple{
+        color: #fff;
+        font-size: 30px;
+        color: #0b0736;
+    }
+}
+/* tract-section */
+
+.tract-section{
+    position: relative;
+     .bg-track{
+        position: absolute;
+        z-index: -1;
+        left: 0%;
+        top: 10%;
+     }
+     .left-section{
+        & h2{
+            font-size: 75px;
+        }
+        .image-grid{
+            padding-top: 80px;
+            padding-left: 80px;
+            display: flex;
+            gap: 20px;
+             
+            & div{
+                width: 150px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+             & div:nth-child(2){
+                margin-top: 40px;
+            } 
+        } 
+     }
+     .right-section{
+        margin-left: 80px;
+
+        & h3{
+            font-size: 40px;
+            color: #9393c4;
+            font-weight: 400;
+            padding-right: 4rem;
+
+        }
+
+        .details-div{
+            display: flex;
+            align-items: start;
+            gap: 30px;
+            margin-top: 60px;
+
+            & div{
+                padding-top: 20px;
+
+                 & h2{
+                    font-size: 24px;
+                    font-weight: 600;
+                 }
+                 & p{
+                    font-size: 20px;
+                    color: #9393c4;
+                    font-weight: 400;
+                    padding-top: 20px;
+                    max-width: 300px;
+                 }
+            }
+        }
+     }
+}
+/* company-section */
+.company{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer {
+    width: 90%;
+    background-color: #D9F3FF;
+    margin: 40px auto;
+    border-radius: 25px;
+
+    .store-design{
+        background-color: #0b0736;
+        color: #fff;
+        margin-top: 30px;
+
+        .fa-apple{
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+   
+   
+}
+/* copyright */
+
+.copyright{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9393c4;
+}
+
+/* responsive for mobile */
+
+ @media (max-width: 768px),(max-width: 1120px) {
+   
+    .container{
+        padding: 0 16px;
+    }
+    .between{
+        gap: 3rem;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .navbar{
+        margin: 10px;
+        align-items: center;
+        gap: 10px;
+        
+        & h3{
+            font-size: 16px;
+        }
+        & div{
+            padding: 5px 10px;
+
+            & img{
+                width: 11px;
+                height: auto;
+            }
+        }
+    }
+    /* banner-section */
+
+    .banner-section{
+        padding: 60px 16px;
+        position: relative;
+        right: 115px;
+        
+        & h1{
+            font-size: 55px;
+            margin-left: 50px; 
+        }
+        & div{
+            padding: 16px 0;
+            font-size: 22px;
+            margin-left: 50px;
+        }
+        & .btn{
+            margin-left: 50px;
+            padding: 8px 15px;
+            font-size: 13px;
+        }
+    }
+    /* target section */
+    .target-section{
+        display:flex;
+        flex-direction: column;
+      
+        .target-img{
+            width: 60%;
+        }
+     
+         & h2{
+             font-size: 30px;
+             
+         }
+       
+     }
+     /* tract-section */
+
+     .tract-section{
+        
+         .left-section{
+            & h2{
+                font-size: 55px;
+                margin-top: 100px;
+                margin-left: 70px;
+            }
+            .bg-track{
+                left: 0%;
+                top: 0%;
+                width: 100%;
+            }
+        }
+             .image-grid{
+               margin-top: 20px;
+               padding-left: 40px;
+                gap: 16px;
+                
+                & div{
+                    width: 130px;
+                    gap: 16px;  
+                } 
+            } 
+            & h3{
+                width: 350px;
+                font-size: 40px;
+                
+            }
+         }
+            .details-div{
+                gap: 20px;
+             
+            }
+            .details-section h2{
+                padding: 30px ;
+        }
+        .company img{
+            width: 85%;
+            margin: 20px 0;
+        }
+        .footer h2{
+            font-size: 45px;
+        }
+         }
+  
